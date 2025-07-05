@@ -1,0 +1,114 @@
+
+* { /*RESET*/
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+header {    
+    padding: 20px 2%;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    left: 0;
+}
+
+/*Estilo da Logo */
+.logo-web img {
+    width: 100px;
+} 
+
+
+li, a, button { /*Estilo geral dos elementos de texto*/
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.app-menu-desktop{
+    display: flex;
+    justify-content: space-between; /*Espaço entre os elementos*/
+    align-items: center; /*Vertical*/
+    padding: 20px 2%; /*20 em cima e em baixo, 15 nas laterais*/
+    background-color: rgba(255, 255, 255, 0.137);
+
+    border-radius: 60px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+
+/*Estilo do efeito*/
+ul li a {
+    padding: 8px 16px; /*Espaçamento interno*/
+    position: relative; 
+    transition: all 0.4s ease;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.nav-links li a:hover {
+    background-color:rgba(10, 6, 6, 0.253);
+    color: #ffd700;
+}
+
+ul li a::before, ul li a::after {  /*Bordas decorativas*/
+    content: "";
+    position: absolute;
+    width: 12px; 
+    height: 12px;
+    border: 2px solid #ffd700;
+    opacity: 0; /*Começa invisível*/
+    transition: all 0.4s ease;
+}
+
+ul li a::before { /*Canto inferior esquerdo */
+    bottom: 10px;
+    left: 10px;
+    border-width: 0 0 2px 2px;
+}
+
+ul li a::after { /*Canto superior direito*/
+    top: 10px;
+    right: 10px;
+    border-width: 2px 2px 0 0;
+}
+
+/*-8PX idetnfica o movimento de ir para fox */
+ul li a:hover::before {
+    opacity: 1; /*Torna o quadrado visível*/
+    bottom: -8px;
+    left: -8px;
+}
+
+ul li a:hover::after {
+    opacity: 1;
+    top: -8px;
+    right: -8px;
+}
+/*Fim do estilo do efeito*/
+
+/*Estilo da button*/
+button {
+    padding: 10px 20px;
+    background-color: #f1f1ed;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    color: black;
+
+    transition: all 0.5s;
+
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+/*Fim do estilo da button*/
