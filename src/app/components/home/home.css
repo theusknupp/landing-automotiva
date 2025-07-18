@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+}
+
 
 .banner {
     display: flex;
@@ -26,16 +30,34 @@
 }
 
 .banner h1 {
-    padding: 5px;
-
-    background-color: rgba(7, 7, 7, 0.26);
-
+    background-color: rgba(88, 88, 88, 0.048);
+    padding-left: 10px;
+    padding-right: 10px;
     color: rgb(255, 255, 255);
     font-size: 60px;
 
     font-weight: 600;
 }
 
-.banner span {
+/*Effeito do texto*/
+h1 > span {
+    text-align: start;
+    position: relative;
+    display: inline-block;
     color: #c99a00;
+    height: 1.25em;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+h1 > span > span {
+    display: block;
+    animation: animateWords 7s infinite ease;
+}
+
+@keyframes animateWords {
+    0% {transform: translateY(0%)}
+    33% {transform: translateY(-90%)}
+    66% {transform: translateY(-190%)}
+    100% {transform: translateY(-290%)}
 }

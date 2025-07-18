@@ -7,7 +7,7 @@
 }
 
 .sobrenos {
-  background-color: #011624;
+    background-color: #031119;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -33,7 +33,7 @@
 }
 
 .title span {
-    color: #ffd700;
+    color: #dfae0e;
 }
 
 /* Imagem */
@@ -67,7 +67,7 @@
     font-family: "Ubuntu";
     padding: 20px;
     margin-top: 30px;
-    background-color: #1b262c;
+    background-color: #07202e;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     box-shadow: rgba(255, 255, 255, 0.226) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px; 
 }
@@ -98,6 +98,13 @@
   font-size: 38px;
   padding: 10px;
 }
+
+.linha-personalizada {
+  border: 1px solid rgb(255, 153, 0); /* Espessura e cor da linha */
+  width: 80%; /* Largura da linha */
+  margin: 10px auto; /* Centraliza a linha e adiciona margem */
+}
+
 
 /*Keyframes*/
 /*Slide right*/
