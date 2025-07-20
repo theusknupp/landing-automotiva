@@ -57,7 +57,8 @@ h1 > span > span {
 
 @keyframes animateWords {
     0% {transform: translateY(0%)}
-    33% {transform: translateY(-90%)}
-    66% {transform: translateY(-190%)}
-    100% {transform: translateY(-290%)}
+    25% {transform: translateY(-90%)}
+    50% {transform: translateY(-190%)}
+    75% {transform: translateY(-290%)}
+    100% {transform: translateY(-390%)}
 }

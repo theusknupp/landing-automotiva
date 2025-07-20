@@ -1,6 +1,6 @@
-<header class="app-header">
+<header class="app-header"  [ngClass]="{ 'show': isScrolled }">
 
-    <section class="app-menu-desktop">
+    <section class="app-menu-desktop" [ngClass]="{ 'show': isScrolled }">
 
        <section class="logo-web">
             <img src="/LogoMK.png" alt="Logo"> <!--Não precisa de '../' pois está em public -->
