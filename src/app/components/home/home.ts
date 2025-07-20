@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { Header } from '../header/header';
 import { About } from '../about/about';
 
+
 //@Component para identificar que essa classe e um componente
 @Component({ 
   selector: 'app-home', //Identificador do component

@@ -1,8 +1,10 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Timeline } from '../timeline/timeline';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.html',
+  imports: [Timeline],
   styleUrls: ['./about.css']
 })
 export class About implements AfterViewInit {
@@ -13,13 +15,11 @@ export class About implements AfterViewInit {
     const observer = new IntersectionObserver(entries => { /*Intersection > para observar */
       entries.forEach(entry => {
         if (entry.isIntersecting) { /*Retorna TRUE se o elemtno estiver vísivel na tela*/
-          this.sobrenosSection.nativeElement.classList.add('animate');
-        } else {
-          this.sobrenosSection.nativeElement.classList.remove('animate');
-        }
+          this.sobrenosSection.nativeElement.classList.add('animate'); /*Somente add para animar só uma vez*/
+        } 
       });
     }, {
-      threshold: 0.20 // Quando 30% da seção estiver visível
+      threshold: 0.30 // Quando 30% da seção estiver visível
     });
 
     observer.observe(this.sobrenosSection.nativeElement);
