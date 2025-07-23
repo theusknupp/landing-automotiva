@@ -1,8 +1,9 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Works } from '../works/works';
 
 @Component({
   selector: 'app-timeline',
-  imports: [],
+  imports: [Works],
   templateUrl: './timeline.html',
   styleUrl: './timeline.css'
 })

@@ -132,6 +132,7 @@ button {
 
 button:hover {
     background-color: #ffd700;
+    transform: scale(1.1);
 }
 /*Fim do estilo da button*/
 

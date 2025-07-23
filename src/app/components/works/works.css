@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+.works {
+    background-color: #031119;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #031119;
+}
+
+/*Titulo*/
+.title-text {
+    width: 100%;
+    display:flex;
+    justify-content:space-around;
+    gap: 10%;
+    padding: 40px 100px;
+    opacity: 0;
+}
+
+.title-text.animate {
+    animation: slideUp 2s forwards;
+}
+
+.title-text h1 {
+    padding-bottom: 30px;
+    color: white;
+    font-size: 36px;
+}
+
+.title-text div {
+    font-size: 28px;
+    color: white;
+        animation: slideUp 2s forwards;
+}
+
+.title-text div span{
+    font-size: 28px;
+    color: #dfae0e;
+}
+
+/*Botão*/
+button { /*Estilo geral dos elementos de texto*/
+    font-size: 20px;
+    margin-top: 40px;
+    width: 120px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+}
+
+/*Cards*/
+.cardsright, .cardsleft {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.card {
+    margin: 50px;
+    background-color: rgb(230, 230, 230);
+    width: 400px;
+    height: 460px;
+    border-radius: 10px;
+    text-align: center;
+    color: #202020;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all 0.5s;
+}
+
+.card h1 {
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.card p {
+    font-size: 17px;
+    padding: 15px 20px;
+    text-align: justify;
+}
+
+.card>img {
+    width: 400px;
+    height: 300px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.card:hover {
+    transform: scale(1.15);
+}
+
+.cardsright.animate {
+    animation: slideRight 2s forwards;
+    animation-delay: 1s; /* delay de 300ms */
+}
+
+.cardsleft.animate {
+    animation: slideLeft 2s forwards;
+     animation-delay: 2s;
+}
+
+/*Animações*/
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+  
+}
+
+@keyframes slideUp {
+    0% {transform: translateY(+150%);}
+    100% {transform: translateY(0%);
+    opacity: 1;}
+}
+
+/*Slide left*/
+@keyframes slideLeft {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateX(0%);
+    opacity: 1;}
+}
+/*Slide right*/
+@keyframes slideRight {
+    0% {transform: translateX(+150%);}
+    100% {transform: translateX(0%);
+    opacity: 1;}
+}
