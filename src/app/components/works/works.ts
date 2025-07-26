@@ -1,7 +1,9 @@
 import { AfterViewInit, Component, ElementRef, ViewChild, ViewChildren, QueryList } from '@angular/core';
+import { Map} from '../map/map';
 
 @Component({
   selector: 'app-works',
+  imports: [Map],
   templateUrl: './works.html',
   styleUrls: ['./works.css']
 })
