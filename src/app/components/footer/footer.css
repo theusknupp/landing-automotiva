@@ -1,9 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 footer {
     background-color: #000;
     width: 100%;
     text-align: center;    
     padding: 25px;
-    height: 100%;
     margin: 0 0 -80px; /*Retirando margem branca do footer */
 }
 
@@ -37,9 +42,9 @@ footer .bottom-footer p {
 }
 
 
-footer .bottom-footer p1 {
+footer .bottom-footer .p1 {
     color: #fff;
-    margin-top: 10px;
+    margin: 10px 0px;
     font-size: 10px;
 }
 

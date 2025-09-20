@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contato {
+    background-color: #031119;
+    padding: 80px 0;
+    padding-bottom: 8;
+}
+
+.cards {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 60px;
+
+} 
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 120px;
+    background-color: #07202e;
+
+    border-radius: 10px;
+
+    transition: all 0.5s;
+}
+
+.card i {
+    color: white;
+}
+
+.card i, p {
+    font-size: 22px;
+}
+
+
+
+.card button {
+    width: 300px;
+    height: 120px;
+
+    border: none;
+    
+    border-radius: 10px;
+
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.card p {
+    color: white;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    background-color: #c99a00cb;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+
+
+
