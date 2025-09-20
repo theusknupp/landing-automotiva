@@ -146,3 +146,87 @@ body {
 .timeline.animate .container:nth-child(5) {
   animation-delay: 4s;
 }
+
+
+/*==================================
+  Responsividade para Tablets e Mobile
+====================================*/
+/*
+  Responsividade para Tablets e Mobile
+*/
+@media (max-width: 768px) {
+  .timeline {
+    padding: 20px 0;
+  }
+
+  /*
+    Reorganiza a linha do tempo para um layout vertical.
+    Remove a linha central e a reposiciona à esquerda.
+  */
+  .timeline::after {
+    left: 40px;
+    margin-left: 0;
+  }
+
+  /*
+    Ajusta todos os contêineres para ficarem à direita da linha.
+  */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+    left: 0;
+  }
+
+  /*
+    Ajusta a posição dos ícones.
+  */
+  .container i {
+    left: 20px;
+    font-size: 32px;
+  }
+
+  /*
+    CORREÇÃO: Posicionamento da seta da caixa de texto
+  */
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid white; /* Todos apontam para a direita */
+    border-left: 0;
+    left: -5px; /* Posição à esquerda da caixa */
+    right: auto;
+  }
+
+  /* Ajustes gerais */
+  .text-box h2 {
+    font-size: 20px;
+  }
+
+  .text-box p {
+    font-size: 14px;
+  }
+}
+
+/*
+  Ajustes para Mobile de tela pequena
+*/
+@media (max-width: 480px) {
+  .timeline::after {
+    left: 30px;
+  }
+
+  .container {
+    padding-left: 60px;
+  }
+  
+  .container i {
+    left: 10px;
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, 0); /*Apenas para deixar opaco*/
+  }
+  
+  .left-container-arrow,
+  .right-container-arrow {
+    left: -8px;
+  }
+}

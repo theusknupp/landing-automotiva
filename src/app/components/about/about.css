@@ -130,7 +130,7 @@
   Responsividade para Tablets e Mobile
 =====================================*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1500px) {
   .sobrenos {
     /* 'column-reverse' inverte a ordem dos itens flex.
       O que era primeiro (imagem), vai para o final.
@@ -148,9 +148,11 @@
     animation: none !important;
     transform: none !important;
     opacity: 1 !important;
+    text-align: center;
   }
 
   .sobrenos img {
+    text-align: center;
     width: 100%; /* A imagem preenche o contêiner de 90% */
     max-width: 500px;
   }
