@@ -1,22 +1,35 @@
-<header class="app-header"  [ngClass]="{ 'show': isScrolled }">
-
+<header class="app-header" [ngClass]="{ 'show': isScrolled }">
     <section class="app-menu-desktop" [ngClass]="{ 'show': isScrolled }">
 
-       <section class="logo-web">
-            <img src="/LogoMK.png" alt="Logo"> <!--Não precisa de '../' pois está em public -->
-       </section>
+        <section class="logo-web">
+            <img src="/LogoMK.png" alt="Logo">
+        </section>
+
+        <div class="menu-hamburguer" (click)="toggleMobileMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
 
         <nav>
-            <ul class="nav-links"> <!--Lista não ordenada-->
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobrenos">Sobre nós</a></li>
-                <li><a href="#works">Serviços</a></li>   
-                <li><a href="#map">Localização</a></li>     
-            </ul>            
+                <li><a href="#works">Serviços</a></li>
+                <li><a href="#map">Localização</a></li>
+            </ul>
         </nav>
 
-        <a href="#contato"><button>Contato</button></a>   
+        <a href="#contato"><button>Contato</button></a>
     </section>
-    
 
+    <nav class="app-menu-mobile" [ngClass]="{ 'show': isMobileMenuOpen }">
+        <ul>
+            <li><a href="#home" (click)="toggleMobileMenu()">Home</a></li>
+            <li><a href="#sobrenos" (click)="toggleMobileMenu()">Sobre nós</a></li>
+            <li><a href="#works" (click)="toggleMobileMenu()">Serviços</a></li>
+            <li><a href="#map" (click)="toggleMobileMenu()">Localização</a></li>
+            <li><a href="#contato" (click)="toggleMobileMenu()">Contato</a></li>
+        </ul>
+    </nav>
 </header>

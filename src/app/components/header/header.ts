@@ -10,9 +10,15 @@ import { CommonModule } from '@angular/common';
 export class Header {
 
   isScrolled = false;
+  isMobileMenuOpen = false; // Nova propriedade para controlar o menu mobile
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 50; // Ativa após 50px de rolagem (ajustável)
+    this.isScrolled = window.scrollY > 50;
+  }
+
+  // Novo método para alternar a visibilidade do menu
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
 }

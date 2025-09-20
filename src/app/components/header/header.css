@@ -138,3 +138,89 @@ button:hover {
 }
 /*Fim do estilo da button*/
 
+
+/*MENU MOBILE */
+.menu-hamburguer {
+  display: none; /* Oculta por padrão no desktop */
+  cursor: pointer;
+  z-index: 1001; /* Garante que o ícone fique acima de outros elementos */
+  padding: 10px;
+}
+
+.menu-hamburguer .bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.app-menu-mobile {
+  display: none; /* Oculta por padrão */
+  position: fixed;
+  top: 0;
+  right: -100%; /* Inicia fora da tela */
+  width: 70%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 80px;
+  transition: right 0.4s ease-in-out;
+  z-index: 999;
+}
+
+.app-menu-mobile.show {
+  display: block; /* Torna visível */
+  right: 0; /* Desliza para a tela */
+}
+
+.app-menu-mobile ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-menu-mobile a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+/*=======================
+RESPONSIVIDADE
+=========================
+CSS para o Menu Mobile*/
+@media (max-width: 1024px) {
+  /* Oculta o menu de navegação e o botão de contato do desktop */
+  .app-menu-desktop nav,
+  .app-menu-desktop a button {
+    display: none;
+  }
+  
+  .app-menu-desktop {
+    justify-content: space-between;
+    padding: 0px 2%;
+  }
+
+  .menu-hamburguer {
+    display: block; /* Mostra o ícone no mobile/tablet */
+    margin-left: auto; /* Adiciona esta linha para alinhar à direita */
+  }
+
+  header.show .menu-hamburguer .bar {
+    background-color: black;
+  }
+
+  /* Exibe o menu mobile */
+  .app-menu-mobile {
+    display: block;
+    top: 0;
+    right: -100%;
+  }
+
+  .app-menu-mobile ul li a:last-child {
+    font-weight: bold;
+    color: #ffffff;
+  }
+}
