@@ -6,7 +6,7 @@
 
 .contato {
     background-color: #031119;
-    padding: 80px 0;
+    padding: 60px 0;
     padding-bottom: 8;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .card i, p {
-    font-size: 22px;
+    font-size: 26px;
 }
 
 
@@ -75,8 +75,16 @@
     background-color: #c99a00cb;
 
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 3px;
+    
+    
 }
 
-
+/* Texto H1 */
+.txt-princ {
+    text-align: center ;
+    color: aliceblue;
+    padding-bottom: 20px;
+}
 
 
