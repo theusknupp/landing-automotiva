@@ -126,6 +126,81 @@
 }
 
 
+/*=================================
+  Responsividade para Tablets e Mobile
+=====================================*/
 
+@media (max-width: 1024px) {
+  .sobrenos {
+    /* 'column-reverse' inverte a ordem dos itens flex.
+      O que era primeiro (imagem), vai para o final.
+      O que era segundo (texto), vai para o início.
+    */
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 60px 20px;
+  }
+  
+  .img-sobre {
+    width: 90%; /* Ajusta o contêiner da imagem */
+    margin-top: 40px; /* Adiciona espaçamento entre o texto e a imagem */
+    /* Remove a animação de slideLeft aqui */
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .sobrenos img {
+    width: 100%; /* A imagem preenche o contêiner de 90% */
+    max-width: 500px;
+  }
+  
+  .sobre-info {
+    width: 100%;
+    text-align: center;
+    /* remove o margin-top */
+    margin-top: 0; 
+  }
+
+  .title {
+    text-align: center;
+    font-size: 28px;
+    /* Desabilita a animação do título também para evitar problemas */
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  /* Ajusta a fonte do título em telas menores */
+  .title h1 {
+    font-size: 24px;
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .sobre-info .caixas {
+    margin-top: 10px;
+    /* Desabilita a animação das caixas */
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .sobre-info .caixas div {
+    padding: 15px;
+    font-size: 18px;
+    align-items: center;
+    text-align: center; /* Centraliza o texto dentro das caixas */
+  }
+
+  .sobre-info .caixas div p {
+    font-size: 16px; /* Ajuste para melhor leitura */
+  }
+
+  .caixas div:hover {
+    transform: scale(1.05);
+  }
+}
 
 
