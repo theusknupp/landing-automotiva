@@ -129,8 +129,25 @@
 /*=================================
   Responsividade para Tablets e Mobile
 =====================================*/
+@media (min-width: 1400px) and (max-width: 1700px) {
 
-@media (max-width: 1500px) {
+  .img-sobre img {
+    width: 500px; 
+  }
+
+}
+
+
+@media (min-width: 700px) and (max-width: 1400px) {
+
+  .img-sobre img {
+    width: 500px; 
+  }
+
+}
+
+
+@media (max-width: 700px) {
   .sobrenos {
     /* 'column-reverse' inverte a ordem dos itens flex.
       O que era primeiro (imagem), vai para o final.
