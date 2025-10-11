@@ -23,7 +23,7 @@ export class Works implements AfterViewInit {
         }
       });
     }, {
-      threshold: 0.2
+      threshold: 0.1
     });
 
     observer.observe(this.workSection.nativeElement);
