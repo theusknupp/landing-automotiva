@@ -189,8 +189,18 @@ button:hover {
 
 /*=======================
 RESPONSIVIDADE
-=========================
-CSS para o Menu Mobile*/
+=========================*/
+
+
+@media (max-width: 1200px) and (min-width: 1025px) {
+
+  .app-menu-desktop nav a{
+    padding: 5px;
+  }
+}
+
+
+
 @media (max-width: 1024px) {
   /* Oculta o menu de navegação e o botão de contato do desktop */
   .app-menu-desktop nav,
@@ -200,7 +210,7 @@ CSS para o Menu Mobile*/
   
   .app-menu-desktop {
     justify-content: space-between;
-    padding: 0px 2%;
+    padding: 0px 1%;
   }
 
   .menu-hamburguer {
