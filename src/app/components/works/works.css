@@ -148,9 +148,11 @@ button:hover {
 /*
 ============================
 Responsividade 
-==========================
-/* Media query para Tablets (768px a 1024px) */
-@media (min-width: 768px) and (max-width: 1300px) {
+============================
+*/
+
+/* Tablet (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .title-text {
     flex-direction: column;
     align-items: center;
@@ -167,33 +169,62 @@ Responsividade
     font-size: 22px;
   }
 
-  /* Faz com que os cards de cada lado se empilhem, mas os dois grupos
-     (cardsright e cardsleft) continuam lado a lado */
+  /* Cards em grid 2 colunas */
   .cardsright, .cardsleft {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
   }
 
-  /* Ajusta o espaçamento entre os cards no tablet */
   .card {
-    margin: 25px 10px;; /* Ocupa mais espaço horizontal */
-    max-width: 400px;
+    margin: 20px;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .card > img {
+    width: 100%;
+    height: auto;
   }
 
   .card:hover {
     transform: scale(1.05);
   }
+}
 
-  .cardsright.animate,
-  .cardsleft.animate,
-  .title-text.animate {
-    animation: none !important;
-    opacity: 1;
+/* Monitores menores (1200px a 1580px) */
+@media (min-width: 1205px) and (max-width: 1500px) {
+ 
+  img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  .card {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
   }
 }
 
-/* Media query para Mobile (até 767px) */
+/* Monitores menores (1025px a 1280px) */
+@media (min-width: 1025px) and (max-width: 1204px) {
+  .cardsright, .cardsleft {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .card {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile (até 767px) */
 @media (max-width: 767px) {
   .title-text {
     flex-direction: column;
@@ -210,12 +241,7 @@ Responsividade
     font-size: 20px;
   }
 
-  /* Esta é a parte principal: empilha todos os cards de forma única */
-  .boxes {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  /* Cards empilhados */
   .cardsright, .cardsleft {
     flex-direction: column;
     align-items: center;
@@ -225,10 +251,11 @@ Responsividade
   .card {
     margin: 15px 0;
     width: 300px;
-    height: 360px;  }
+    height: auto;
+  }
 
   .card > img {
-    width: 300px;
-    height: 150px;
+    width: 100%;
+    height: auto;
   }
 }
