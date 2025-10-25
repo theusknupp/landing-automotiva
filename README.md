@@ -1,59 +1,61 @@
-# LandingAutomotiva
+# Landing Page - MK Estética Automotiva 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+# Sobre o projeto
 
-## Development server
+Esta é uma landing page moderna e totalmente responsiva desenvolvida para a MK Estética Automotiva.
 
-To start a local development server, run:
+O projeto foi construído utilizando Angular, com o objetivo de criar uma Single Page Application (SPA) performática e com uma experiência de usuário fluida. O design foi pensado para ser visualmente impactante e profissional, refletindo a alta qualidade dos serviços oferecidos pela empresa.
 
-```bash
-ng serve
-```
+Para criar uma interface sofisticada, foram utilizadas técnicas avançadas de CSS, como o efeito de glassmorphism nos cards de produto, além de gradientes sutis e animações que guiam o olhar do usuário. A paleta de cores escura com detalhes em dourado reforça a identidade visual da marca.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+No desenvolvimento deste projeto, foram aplicados conceitos fundamentais do ecossistema Angular, como:
 
-## Code scaffolding
+Componentização: Criação de componentes reutilizáveis (Header, Footer, Products) para um código mais limpo e organizado.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Roteamento: Uso do Angular Router para criar uma navegação fluida entre as páginas (Home e Produtos) sem a necessidade de recarregar o site.
 
-```bash
-ng generate component component-name
-```
+Estilização Encapsulada: Cada componente possui seu próprio estilo, evitando conflitos de CSS e garantindo a manutenibilidade.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Responsividade: Implementação de layout flexível com Media Queries, Flexbox e Grid para garantir uma experiência perfeita em desktops, tablets e celulares.
 
-```bash
-ng generate --help
-```
+# Acesse a Aplicação
 
-## Building
+<!-- Adicione aqui o link para o seu site hospedado na Vercel ou GitHub Pages -->
 
-To build the project run:
+Clique aqui para conhecer o site: <a href="https://landing-automotiva.vercel.app/"> MK Estética Automotiva <a>
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
+# Layout da Aplicação (Desktop)
 
-## Running end-to-end tests
+<img width="1887" height="945" alt="Image" src="https://github.com/user-attachments/assets/68f154cc-7ecf-4f05-862b-d2ea7d62d815" />
 
-For end-to-end (e2e) testing, run:
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
+# Layout da Aplicação (Mobile)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<img width="504" height="889" alt="Image" src="https://github.com/user-attachments/assets/0ed44526-525f-4954-8866-ca1abb770733" />
+
+
+# Tecnologias Utilizadas
+
+Angular
+
+TypeScript
+
+HTML5
+
+CSS3 (Flexbox, Grid, Animações, Glassmorphism)
+
+Git & GitHub
+
+# Autor
+
+Matheus Knupp Dos Santos
+
+<!-- Adicione aqui o link para o seu perfil do LinkedIn -->
+
+https://www.linkedin.com/in/matheus-knupp/
